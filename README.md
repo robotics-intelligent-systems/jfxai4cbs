@@ -214,3 +214,16 @@ La base recomendada es Frigate + Mosquitto + adaptadores propios + Ditto, con hi
 ## 8. Conceptos físicos trasladados
 
 La lancha de patrulla médica de `jfxhms` y el helicóptero modular de hidrógeno eléctrico de `jfxai4scss` se mantienen en `MBSE/CAD`. [Especificaciones, Drawio/SysML y trazabilidad](docs/requirements/transferred-platform-concepts.md): PAT-01–07 y MED-C01–12 compartidos, más HEL-01–07 propuestos. Estado: conceptos y requisitos documentales; geometría, simulación e integración pendientes de validación.
+
+## 9. Gestión de estacionamientos
+
+Categoría añadida: **gestión de estacionamientos y movilidad — reservas, ocupación visual e IoT**. Fuente del compendio: [jfoxpms](https://github.com/robotics-intelligent-systems/jfoxpms). La revisión de los forks públicos accesibles de DK2035 y robotics-intelligent-systems no identificó gestores de estacionamientos específicos; los siguientes son proyectos externos identificados a partir de ese compendio.
+
+| Candidato | Subcategoría | Estado |
+|---|---|---|
+| [Parker](https://github.com/oxedom/parker) | Visión y ocupación de plazas | Código MIT; candidato para piloto, revisar pesos y desarrollar adaptador |
+| [TheParker](https://github.com/ketanchoyal/theParker) | Reservas móviles y estacionamiento compartido | Código Android MIT; evaluar dependencias antiguas y servicios Firebase/Maps |
+| [Ezy-Parking](https://github.com/prathimacode-hub/Ezy-Parking) | Gestión web, reservas e IoT propuesto | GPL v3; verificar funciones implementadas y condiciones de la versión |
+| [Parkingslot](https://github.com/visualbuffer/parkingslot) | Investigación de ocupación | Referencia pendiente de licencia explícita; no aceptado como dependencia |
+
+Integración propuesta: visión/sensores → adaptador → Mosquitto → Ditto e historial, con reservas en un servicio transaccional separado. Las interfaces requieren desarrollo y pruebas. [Evaluación, procedencia, pendientes y criterios del piloto](docs/integrations/parking-management.md); [catálogo categorizado](catalog/parking-integrations.json). No hay dependencias instaladas ni conectores implementados.
