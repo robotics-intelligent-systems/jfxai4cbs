@@ -177,7 +177,7 @@ Los umbrales de aceptación se fijan antes del piloto según riesgo, número de 
 
 ## 7. Organización propuesta del repositorio
 
-La siguiente estructura es una propuesta; el repositorio consultado contiene únicamente README.md.
+La estructura siguiente es una propuesta de implementación. El repositorio contiene además dos ilustraciones CAD trasladadas y sus especificaciones documentales; no contiene una plataforma ejecutable.
 
 ```text
 README.md
@@ -210,3 +210,7 @@ tests/
 Cada ficha de `components.yaml` debe registrar nombre, categoría, URL canónica, versión o commit, licencia del código, licencia de pesos/datos, interfaces, estado de evaluación y fecha de revisión. Las fichas separan recursos del original, incorporaciones propuestas y componentes aceptados para despliegue.
 
 La base recomendada es Frigate + Mosquitto + adaptadores propios + Ditto, con historial, identidad y supervisión. Añadir simulación e IA tras validar el flujo de eventos, y biometría como módulo opcional con modelos cuyo uso y distribución sean compatibles con el objetivo de software libre. Mantener los servicios sustituibles mediante contratos documentados y despliegues reproducibles.
+
+## 8. Conceptos físicos trasladados
+
+La lancha de patrulla médica de `jfxhms` y el helicóptero modular de hidrógeno eléctrico de `jfxai4scss` se mantienen en `MBSE/CAD`. [Especificaciones, Drawio/SysML y trazabilidad](docs/requirements/transferred-platform-concepts.md): PAT-01–07 y MED-C01–12 compartidos, más HEL-01–07 propuestos. Estado: conceptos y requisitos documentales; geometría, simulación e integración pendientes de validación.

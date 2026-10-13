@@ -1,0 +1,123 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="hel-0" name="01 Helicopter requirements and verification">
+    <mxGraphModel page="1" pageWidth="1600" pageHeight="1300">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HEL-01" value="«requirement» HEL-01&#10;Mission and configuration&#10;SHALL Define approved mission, occupancy, envelope and modular cabin interfaces." style="whiteSpace=wrap;html=0;fillColor=#fff2cc;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="450" y="40" width="650" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="design-HEL-01" value="«block» airframe&#10;Proposed allocation" style="whiteSpace=wrap;html=0;fillColor=#dae8fc;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="30" y="40" width="350" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="test-HEL-01" value="«testCase» HEL-01-EV&#10;A/I — planned&#10;Review mission/configuration matrix and interface drawings; no geometry inferred from the image." style="whiteSpace=wrap;html=0;fillColor=#d5e8d4;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="40" width="400" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="satisfy-HEL-01" value="«satisfy» — planned" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;" edge="1" parent="1" source="design-HEL-01" target="HEL-01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="verify-HEL-01" value="«verify» — planned" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;" edge="1" parent="1" source="test-HEL-01" target="HEL-01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HEL-02" value="«requirement» HEL-02&#10;Mass and centre of gravity&#10;SHALL Maintain a mass/CG budget for cabin, hydrogen tanks, fuel cell, battery and propulsion in each loading case." style="whiteSpace=wrap;html=0;fillColor=#fff2cc;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="450" y="340" width="650" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="design-HEL-02" value="«block» airframe&#10;Proposed allocation" style="whiteSpace=wrap;html=0;fillColor=#dae8fc;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="30" y="340" width="350" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="test-HEL-02" value="«testCase» HEL-02-EV&#10;A — planned&#10;Review all approved loading cases against selected flight-envelope limits." style="whiteSpace=wrap;html=0;fillColor=#d5e8d4;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="340" width="400" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="satisfy-HEL-02" value="«satisfy» — planned" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;" edge="1" parent="1" source="design-HEL-02" target="HEL-02">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="verify-HEL-02" value="«verify» — planned" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;" edge="1" parent="1" source="test-HEL-02" target="HEL-02">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HEL-03" value="«requirement» HEL-03&#10;Hydrogen storage and isolation&#10;SHALL Define hydrogen storage, isolation, ventilation, leak detection and maintenance interfaces with a recorded hazard analysis." style="whiteSpace=wrap;html=0;fillColor=#fff2cc;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="450" y="640" width="650" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="design-HEL-03" value="«block» hydrogen&#10;Proposed allocation" style="whiteSpace=wrap;html=0;fillColor=#dae8fc;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="30" y="640" width="350" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="test-HEL-03" value="«testCase» HEL-03-EV&#10;A/T — planned&#10;Review hazards and planned leak/isolation tests against limits selected before testing." style="whiteSpace=wrap;html=0;fillColor=#d5e8d4;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="640" width="400" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="satisfy-HEL-03" value="«satisfy» — planned" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;" edge="1" parent="1" source="design-HEL-03" target="HEL-03">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="verify-HEL-03" value="«verify» — planned" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;" edge="1" parent="1" source="test-HEL-03" target="HEL-03">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HEL-04" value="«requirement» HEL-04&#10;Hybrid electric power and thermal control&#10;SHALL Specify fuel-cell, buffer battery, conversion, motor and cooling interfaces including peak demand and loss-of-source cases." style="whiteSpace=wrap;html=0;fillColor=#fff2cc;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="450" y="940" width="650" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="design-HEL-04" value="«block» energy&#10;Proposed allocation" style="whiteSpace=wrap;html=0;fillColor=#dae8fc;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="30" y="940" width="350" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="test-HEL-04" value="«testCase» HEL-04-EV&#10;A/T — planned&#10;Analyse mission energy and thermal budgets; bench-test selected operating and fault cases." style="whiteSpace=wrap;html=0;fillColor=#d5e8d4;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="940" width="400" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="satisfy-HEL-04" value="«satisfy» — planned" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;" edge="1" parent="1" source="design-HEL-04" target="HEL-04">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="verify-HEL-04" value="«verify» — planned" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;" edge="1" parent="1" source="test-HEL-04" target="HEL-04">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="hel-1" name="02 Helicopter requirements and verification">
+    <mxGraphModel page="1" pageWidth="1600" pageHeight="1300">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HEL-05" value="«requirement» HEL-05&#10;Rotor and flight dynamics&#10;SHALL Model rotor/airframe aerodynamics, stability and flight dynamics for the approved envelope." style="whiteSpace=wrap;html=0;fillColor=#fff2cc;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="450" y="40" width="650" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="design-HEL-05" value="«block» flight&#10;Proposed allocation" style="whiteSpace=wrap;html=0;fillColor=#dae8fc;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="30" y="40" width="350" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="test-HEL-05" value="«testCase» HEL-05-EV&#10;A/T — planned&#10;Compare model outputs with identified reference data and approved error tolerances." style="whiteSpace=wrap;html=0;fillColor=#d5e8d4;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="40" width="400" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="satisfy-HEL-05" value="«satisfy» — planned" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;" edge="1" parent="1" source="design-HEL-05" target="HEL-05">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="verify-HEL-05" value="«verify» — planned" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;" edge="1" parent="1" source="test-HEL-05" target="HEL-05">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HEL-06" value="«requirement» HEL-06&#10;Authority and fault response&#10;SHALL Keep local flight authority separate from supervisory analytics and define degraded modes and emergency responses." style="whiteSpace=wrap;html=0;fillColor=#fff2cc;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="450" y="340" width="650" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="design-HEL-06" value="«block» control&#10;Proposed allocation" style="whiteSpace=wrap;html=0;fillColor=#dae8fc;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="30" y="340" width="350" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="test-HEL-06" value="«testCase» HEL-06-EV&#10;A/D — planned&#10;Demonstrate fault scenarios in simulation with operator review and recorded mode transitions." style="whiteSpace=wrap;html=0;fillColor=#d5e8d4;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="340" width="400" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="satisfy-HEL-06" value="«satisfy» — planned" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;" edge="1" parent="1" source="design-HEL-06" target="HEL-06">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="verify-HEL-06" value="«verify» — planned" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;" edge="1" parent="1" source="test-HEL-06" target="HEL-06">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HEL-07" value="«requirement» HEL-07&#10;Digital twin and replay&#10;SHALL Version configuration and models; timestamp and quality-tag telemetry; keep observed and simulated states separate." style="whiteSpace=wrap;html=0;fillColor=#fff2cc;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="450" y="640" width="650" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="design-HEL-07" value="«block» twin&#10;Proposed allocation" style="whiteSpace=wrap;html=0;fillColor=#dae8fc;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="30" y="640" width="350" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="test-HEL-07" value="«testCase» HEL-07-EV&#10;T — planned&#10;Replay synthetic events with duplicate, stale and missing samples; verify identity, provenance and state separation." style="whiteSpace=wrap;html=0;fillColor=#d5e8d4;fontSize=16;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="640" width="400" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="satisfy-HEL-07" value="«satisfy» — planned" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;" edge="1" parent="1" source="design-HEL-07" target="HEL-07">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="verify-HEL-07" value="«verify» — planned" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;" edge="1" parent="1" source="test-HEL-07" target="HEL-07">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

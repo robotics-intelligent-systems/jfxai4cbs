@@ -1,0 +1,22 @@
+{
+  "reviewed_at": "2026-10-13",
+  "status": "Proposed / evidence pending",
+  "concepts": [
+    {
+      "origin": "jfxhms",
+      "destination": "jfxai4cbs",
+      "path": "MBSE/CAD/medical-patrol-boat-concept.jpg",
+      "destination_blob": "ed9032052cc5166080b4d780f25ca6d34fa64205",
+      "origin_commit": "97f1e924e90af6a39028a73c7cce48aaab2d805c",
+      "requirement_ids": "MED-C01\u201312 (shared), PAT-01\u201307"
+    },
+    {
+      "origin": "jfxai4scss",
+      "destination": "jfxai4cbs",
+      "path": "MBSE/CAD/modular-hydrogen-electric-helicopter-concept.jpg",
+      "destination_blob": "5f839988a0292b0dc3d711fbc59e9e4f09ddaeed",
+      "origin_commit": "cb5eecefb5dc623849ac0b3e43e67b599c3b7e4d",
+      "requirement_ids": "HEL-01\u201307 (new; no predecessor found)"
+    }
+  ]
+}
